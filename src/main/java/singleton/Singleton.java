@@ -24,7 +24,7 @@ public class Singleton {
         return instancia;
     }
 
-    public static void saludo() {
-        System.out.println("Hola soy la única instancia de Singleton: " + numeroInstancias);
+    public static void instanciasConcurrentes() {
+        System.out.println("El número de instancias creadas es: " + numeroInstancias);
     }
 }
