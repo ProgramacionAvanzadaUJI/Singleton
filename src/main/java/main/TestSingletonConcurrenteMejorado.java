@@ -9,7 +9,7 @@ public class TestSingletonConcurrenteMejorado {
     private void ejecuta() {
         for(int i = 0; i < 1000; i++)
             new Thread(new Hilo()).start();
-        SingletonConcurrenteMejorado.saludo();
+        SingletonConcurrenteMejorado.instanciasConcurrentes();
     }
     public static void main(String[] args) {
         new TestSingletonConcurrenteMejorado().ejecuta();
